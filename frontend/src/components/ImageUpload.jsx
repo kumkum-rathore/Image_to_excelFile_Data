@@ -22,10 +22,10 @@ const ImageUpload = ({ setTableData }) => {
       setLoading(true); // 🔥 start loader
       setError("");
 
-      const res = await fetch("http://localhost:5000/api/upload", {
-        method: "POST",
-        body: formData,
-      });
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/upload`, {
+  method: "POST",
+  body: formData,
+});
 
       const data = await res.json();
 

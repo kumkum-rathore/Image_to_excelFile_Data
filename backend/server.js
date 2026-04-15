@@ -8,7 +8,13 @@ const uploadRoutes = require("./routes/uploadRoutes");
 
 const app = express();
 
-app.use(cors());
+const corsOptions = {
+  origin:process.env.CORS_ORIGIN,
+  // origin: 'https://your-frontend-domain.com', // Yha apne live frontend ka link dalein
+  optionsSuccessStatus: 200 
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // Routes
