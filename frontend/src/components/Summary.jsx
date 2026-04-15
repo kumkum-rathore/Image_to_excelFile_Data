@@ -3,7 +3,7 @@ import {
   calculateAverage,
   calculateMin,
   calculateMax,
-} from "../utils/calculations";
+} from "../utils/Calculations";
 
 const Summary = ({ tableData, selectedColumn }) => {
   if (!tableData.length) return null;

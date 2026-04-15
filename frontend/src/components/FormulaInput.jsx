@@ -4,7 +4,7 @@ import {
   calculateAverage,
   calculateMin,
   calculateMax,
-} from "../utils/calculations";
+} from "../utils/Calculations";
 
 const FormulaInput = ({ tableData, selectedColumn }) => {
   const [formula, setFormula] = useState("");
